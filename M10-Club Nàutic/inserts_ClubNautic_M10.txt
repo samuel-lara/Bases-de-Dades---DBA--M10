@@ -1,0 +1,59 @@
+#Especialitat
+INSERT INTO Especialitat VALUES(‘E-001’);
+INSERT INTO Especialitat VALUES(‘E-002’);
+INSERT INTO Especialitat VALUES(‘E-003’);
+INSERT INTO Especialitat VALUES(‘E-004’);
+INSERT INTO Especialitat VALUES(‘E-005’);
+INSERT INTO Especialitat VALUES(‘E-006’);
+INSERT INTO Especialitat VALUES(‘E-007’);
+
+#Socis
+INSERT INTO Socis VALUES(‘4758962-R’, 'Carlos', 'C/Cordoba 02, Amposta', '2021-06-02');
+INSERT INTO Socis VALUES(‘4795887-P’, 'Maria', 'C/ Diputació 22, Amposta', '2021-06-05');
+INSERT INTO Socis VALUES(‘4732120-J’, 'Laia', 'C/ Capdevila 56, Tortosa', '2021-06-09');
+INSERT INTO Socis VALUES(‘4778465-Y’, 'Jesús', 'C/ Capsa 77, Deltebre', '2021-07-11');
+INSERT INTO Socis VALUES(‘4754321-L’, 'José', 'C/Madrid 02, Camarles', '2021-07-12');
+INSERT INTO Socis VALUES(‘4798432-M’, 'Roser', 'C/Estufa 1, Masdenverge', '2021-07-22');
+INSERT INTO Socis VALUES(‘4735415-T’, 'Ramón', 'C/Ameno 33, Roquetes', '2021-07-23');
+
+#Embarcacions
+INSERT INTO Embarcacions VALUES('4568JJJ', 'La Buena', 'Catamarán', '20 metres', ‘4758962-R’);
+INSERT INTO Embarcacions VALUES('9181GHF', 'La Mala', 'Catamarán', '25 metres', ‘4795887-P’);
+INSERT INTO Embarcacions VALUES('8465YIU', 'Bandido', 'Yate', '45 metres', ‘4732120-J’);
+INSERT INTO Embarcacions VALUES('3541FRC', 'La Torre', 'Yate', '55 metres', ‘4778465-Y’);
+INSERT INTO Embarcacions VALUES('5134SRT', 'La Guapa', 'Barca', '5 metres', ‘4754321-L’);
+INSERT INTO Embarcacions VALUES('6412UGY', 'El Grande', 'Catamarán', '24 metres', ‘4798432-M’);
+INSERT INTO Embarcacions VALUES('1213YCC', 'Flacos', 'Yate', '40 metres', ‘4735415-T’);
+INSERT INTO Embarcacions VALUES('4561UYF', 'Pequeña', 'Barca', '3 metres', ‘4758962-R’);
+
+#Treballadors
+INSERT INTO Treballadors VALUES(‘T-725’, 'Marcos', 'C/ Treball 1, Tortosa', ‘E-001’);
+INSERT INTO Treballadors VALUES(‘T-726’, 'Mariano', 'C/ Eina 2, Amposta', ‘E-002’);
+INSERT INTO Treballadors VALUES(‘T-727’, 'Abril', 'C/ Març 14, Camarles', ‘E-003’);
+INSERT INTO Treballadors VALUES(‘T-728’, 'Ingrid', 'C/ Estiu 58, Amposta', ‘E-004’);
+INSERT INTO Treballadors VALUES(‘T-729’, 'Antonio', 'C/ Alfombra 25, Tortosa', ‘E-005’);
+INSERT INTO Treballadors VALUES(‘T-730’, 'Fernando', 'C/ Casco 1, Tortosa', ‘E-006’);
+INSERT INTO Treballadors VALUES(‘T-731’, 'Andrea', 'C/ Màquina 48, l’Aldea ', ‘E-007’);
+INSERT INTO Treballadors VALUES(‘T-732’, 'Cinta', 'C/ Treball 12, Tortosa', ‘E-005’);
+
+
+
+#Amarres
+INSERT INTO Amarres VALUES(‘A-111’, 1, 1, '2021-06-04', true, '4568JJJ');
+INSERT INTO Amarres VALUES(‘A-222’, 1, 0, '2021-06-14’, true, '9181GHF');
+INSERT INTO Amarres VALUES(‘A-333’, 0, 0, '2021-06-15', false, '8465YIU');
+INSERT INTO Amarres VALUES(‘A-444’, 1, 0, '2021-06-22', true, '3541FRC');
+INSERT INTO Amarres VALUES(‘A-555’, 1, 1, '2021-07-01', true, '5134SRT');
+INSERT INTO Amarres VALUES(‘A-667’, 0, 0, '2021-07-02', false, '6412UGY');
+INSERT INTO Amarres VALUES(‘A-777’, 1, 1, '2021-07-07', true, '1213YCC');
+INSERT INTO Amarres VALUES(‘A-888’, 0, 1, '2021-07-11', true, '4561UYF');
+
+#relacioTreballadorsAmarres
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-111’, ‘T-725’);
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-222’, ‘T-726’);
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-333’, ‘T-727’);
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-444’, ‘T-728’);
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-555’, ‘T-729’);
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-667’, ‘T-726’);
+INSERT INTO relacioTreballadorsAmarres VALUES(‘A-777’, ‘T-730’);
+
