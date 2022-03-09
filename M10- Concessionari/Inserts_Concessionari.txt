@@ -1,0 +1,72 @@
+#cotxe
+
+INSERT INTO cotxe VALUES ('Nissan', 'GTR', '3.799cm³', 117000);
+INSERT INTO cotxe VALUES ('Audi', 'A3', '4.343cm³', '25986');
+INSERT INTO cotxe VALUES ('BMW', 'X6', '4.935cm³', 115500);
+INSERT INTO cotxe VALUES ('Citroen', 'Berlingo', '3.799cm³', 21528);
+INSERT INTO cotxe VALUES ('Cupra', 'Ateca', '1.5cm³', 30911);
+INSERT INTO cotxe VALUES ('Ford', 'Mustang', '5cm³',  52186);
+INSERT INTO cotxe VALUES ('Mercedes', 'GLB', '1.3m³', 40662);
+
+#opcions
+
+INSERT INTO Opcions VALUES (4578, OpcioA, '20 de descompte amb la seva compra', 100000)
+INSERT INTO Opcions VALUES (4356, OpcioB, '30 de descompte amb la seva compra', 97650)
+INSERT INTO Opcions VALUES (9657, OpcioC, '35 de descompte amb la seva compra', 92000)
+INSERT INTO Opcions VALUES (9324, OpcioD, '40 de descompte amb la seva compra', 84300)
+INSERT INTO Opcions VALUES (6203, OpcioE, '45 de descompte amb la seva compra', 80500)
+INSERT INTO Opcions VALUES (0456, OpcioF, '50 de descompte amb la seva compra', 77900)
+INSERT INTO Opcions VALUES (7348, OpcioG, '55 de descompte amb la seva compra', 72670)
+
+#Clients
+
+INSERT INTO Clients VALUES ('52718293W', 'Pablo', 'Carrer la poma 45', 899263365)
+INSERT INTO Clients VALUES ('38102569L', 'Miguel', 'Carrer Barcelona 78', 266153829)
+INSERT INTO Clients VALUES ('83719025R', 'Oscar', 'Avinguda de la Rapita 23', 985678912)
+INSERT INTO Clients VALUES ('91820156P', 'Juan Carlos', 'Carrer l'hort 22', 097548678)
+INSERT INTO Clients VALUES ('92691643D', 'Kevin', 'Avinguda Joan Arbo 91', 178920343)
+INSERT INTO Clients VALUES ('93024041B', 'Joaquin', 'Carrer el buitre 40', 871928735)
+INSERT INTO Clients VALUES ('03543924E', 'Eliseo', 'Avinguda Miami 55', 167290937)
+
+#Venedor
+
+INSERT INTO Venedor VALUES ('67291875Q', 'Carlos', 'Carrer mostoles 89', 899263365)
+INSERT INTO Venedor VALUES ('98071894Y', 'Maria', 'Carrer ginola 54', 644789102)
+INSERT INTO Venedor VALUES ('98761026U', 'Carlota', 'Carrer brasil 45', 644571903)
+INSERT INTO Venedor VALUES ('17897609Ñ', 'Lluisa', 'Carrer uribe 87', 644819267)
+INSERT INTO Venedor VALUES ('01927191N', 'Paca', 'Carrer uribe 87', 644719203)
+INSERT INTO Venedor VALUES ('09654327L', 'Lola', 'Carrer alfons 90', 644189906)
+INSERT INTO Venedor VALUES ('16782936Z', 'Vicente', 'Carrer tribunal 12', 644976645)
+
+#Factura 
+
+INSERT INTO Factura VALUES (67189, '2021-06-04', 'Carrer mostoles 89', 899263365)
+INSERT INTO Factura VALUES (78190, '2021-06-14', 'Carrer ginola 54', 644789102)
+INSERT INTO Factura VALUES (01732, '2021-06-17', 'Carrer brasil 45', 644571903)
+INSERT INTO Factura VALUES (87890, '2021-06-20', 'Carrer uribe 87', 644819267)
+INSERT INTO Factura VALUES (01928, '2021-06-29', 'Carrer uribe 87', 644719203)
+INSERT INTO Factura VALUES (45617, '2021-07-05', 'Carrer alfons 90', 644189906)
+INSERT INTO Factura VALUES (92834, '2021-07-15', 'Carrer tribunal 12', 644976645)
+
+#Linies_Factura 
+
+INSERT INTO Linies_Factura VALUES (9800)
+INSERT INTO Linies_Factura VALUES (7800)
+INSERT INTO Linies_Factura VALUES (8789)
+INSERT INTO Linies_Factura VALUES (9055)
+INSERT INTO Linies_Factura VALUES (6570)
+INSERT INTO Linies_Factura VALUES (6900)
+INSERT INTO Linies_Factura VALUES (9022)
+
+#opcions_vehicle
+
+INSERT INTO opcions_vehicle VALUES (1, 67000)
+INSERT INTO opcions_vehicle VALUES (4, 98000)
+INSERT INTO opcions_vehicle VALUES (1, 54000)
+INSERT INTO opcions_vehicle VALUES (2, 65000)
+INSERT INTO opcions_vehicle VALUES (3, 77500)
+INSERT INTO opcions_vehicle VALUES (1, 43900)
+INSERT INTO opcions_vehicle VALUES (3, 89000)
+
+
+

@@ -1,0 +1,56 @@
+TABLE cotxe {
+Model_Cotxe varchar PK [NOT NULL]
+Marca varchar [NOT NULL]
+Cilindrada varchar [NOT NULL]
+Preu int [NOT NULL]
+}
+
+TABLE Opcions {
+Id_Opcio varchar pk [NOT NULL]
+Nom_Opcio varchar [NOT NULL]
+Descripcio_Opcio varchar [NOT NULL]
+Preu_Opcio int [NOT NULL]
+}
+
+TABLE Clients {
+DNI varchar PK [NOT NULL]
+Nom varchar [NOT NULL]
+Direccio varchar [NOT NULL]
+Telefon int [NOT NULL]
+}
+
+Table Venedor {
+DNI varchar PK [NOT NULL]
+Nom varchar [NOT NULL]
+Direccio varchar [NOT NULL]
+Telefon int [NOT NULL]
+}
+
+TABLE Factura {
+Num_Factura varchar PK [NOT NULL]
+Data date [NOT NULL]
+Direccio varchar [NOT NULL]
+Telefon int [NOT NULL]
+}
+
+TABLE Linies_Factura {
+  
+Quantitat_Preu_Factura int PK [NOT NULL]
+}
+
+TABLE opcions_vehicle {
+Quantitat int PK [NOT NULL]
+preu int [NOT NULL]
+}
+
+Ref: "cotxe"."Model_Cotxe" < "opcions_vehicle"."Quantitat"
+
+Ref: "Opcions"."Id_Opcio" < "opcions_vehicle"."Quantitat"
+
+Ref: "opcions_vehicle"."Quantitat" < "Linies_Factura"."Quantitat_Preu_Factura"
+
+Ref: "Venedor"."DNI" < "Factura"."Num_Factura"
+
+Ref: "Clients"."DNI" < "Factura"."Num_Factura"
+
+Ref: "Linies_Factura"."Quantitat_Preu_Factura" < "Factura"."Num_Factura"
