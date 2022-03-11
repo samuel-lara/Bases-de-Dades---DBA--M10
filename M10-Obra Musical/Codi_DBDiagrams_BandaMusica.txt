@@ -1,0 +1,38 @@
+Table "ObraMusical" {
+  "id_Obra" int [pk]
+  "Nom" varchar(255)
+  "Autor" varchar(255)
+  "Genere" varchar(255)
+}
+
+Table "Interpretacio" {
+  "id_interpretacio" int [pk]
+  "Data_interpretacio" datetime
+}
+
+Table "Relacio_obra_interpretacio" {
+  "id_Obra" int
+  "id_interpretacio" int
+
+
+}
+
+Table "Instruments" {
+  "id_instrument" int [pk]
+  "nom_instrument" varchar (255)
+}
+
+Table "Relacio_obra_instrument" {
+  "id_Obra" int
+  "id_instrument" int
+
+
+}
+
+Ref:"Interpretacio"."id_interpretacio" < "Relacio_obra_interpretacio"."id_interpretacio"
+
+Ref:"ObraMusical"."id_Obra" < "Relacio_obra_interpretacio"."id_Obra"
+
+Ref:"ObraMusical"."id_Obra" < "Relacio_obra_instrument"."id_Obra"
+
+Ref:"Instruments"."id_instrument" < "Relacio_obra_instrument"."id_instrument"

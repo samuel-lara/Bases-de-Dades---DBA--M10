@@ -1,0 +1,51 @@
+Table Socis {
+  DNI_Soci varchar PK [NOT NULL]
+  Nom_Soci varchar [NOT NULL]
+  Direccio_Soci varchar [NOT NULL]
+  data_alta_Soci date [NOT NULL]
+}
+
+Table Embarcacions{
+  Matricula_Embarcacio varchar PK [NOT NULL]
+  Nom_Embarcacio varchar [NOT NULL]
+  Tipus_Embarcacio varchar [NOT NULL]
+  Dimensio_Embarcacio varchar [NOT NULL]
+  DNI_Soci varchar [NOT NULL]
+}
+
+Table Amarres {
+  Id_Amarre varchar PK [NOT NULL]
+  Comptador_Aigua int [NOT NULL]
+  Domptador_Llum int [NOT NULL]
+  Data_Amarre date [NOT NULL]
+  Manteniment_Amarre boolean [NOT NULL]
+  Matricula_Embarcacio varchar [NOT NULL]
+}
+
+Table relacioTreballadorsAmarres {
+  Id_Amarre varchar [NOT NULL]
+  Codi_Treballador varchar [NOT NULL]
+}
+
+Table Treballadors {
+  Codi_Treballador varchar PK [NOT NULL]
+  Nom_Treballador varchar [NOT NULL]
+  Direccio_Treballador varchar [NOT NULL]
+  Codi_Especialitat varchar [NOT NULL]
+}
+
+Table Especialitat{
+  Codi_Especialitat varchar PK [NOT NULL]
+}
+
+
+
+Ref: "Embarcacions"."Matricula_Embarcacio" - "Amarres"."Matricula_Embarcacio"
+
+Ref: "Amarres"."Id_Amarre" < "relacioTreballadorsAmarres"."Id_Amarre"
+
+Ref: "Treballadors"."Codi_Treballador" < "relacioTreballadorsAmarres"."Codi_Treballador"
+
+Ref: "Socis"."DNI_Soci" < "Embarcacions"."DNI_Soci"
+
+Ref: "Especialitat"."Codi_Especialitat" < "Treballadors"."Codi_Especialitat"

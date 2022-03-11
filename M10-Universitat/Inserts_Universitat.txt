@@ -1,0 +1,39 @@
+INSERT INTO Alumnes VALUES ('89165198L', 'QDS87125', 'Fernando Porrino', 'T-7129-U');
+INSERT INTO Alumnes VALUES ('12367189O', 'VSL14890', 'Jamal Kenoudie', 'O-2341-K');
+INSERT INTO Alumnes VALUES ('28946108P', 'ETI17391', 'Eliseo De Melacha', 'Y-4539-X');
+INSERT INTO Alumnes VALUES ('23914123K', 'NTI20122', 'Arnau Serra', 'A-9105-B');
+INSERT INTO Alumnes VALUES ('17491949B', 'LOL12453', 'Jose Antonio Cacho', 'H-9742-I');
+INSERT INTO Alumnes VALUES ('13613400F', 'POU23491', 'Pablo Franch', 'Z-3410-C');
+INSERT INTO Alumnes VALUES ('47861789H', 'NSE23488', 'Josep Pedrerol', 'M-2349-Ñ');
+
+INSERT INTO Treball VALUES ('T-7129-U', 'Matematiques', '2021-05-02', '91047295O'); 
+INSERT INTO Treball VALUES ('O-2341-K'', 'Socials', '2021-05-03', '95728390Y'); 
+INSERT INTO Treball VALUES ('A-9105-B', 'Fisica i Quimica', '2021-05-04', '16782890L'); 
+INSERT INTO Treball VALUES ('H-9742-I', 'Castella', '2021-05-05', '47861834Q'); 
+INSERT INTO Treball VALUES ('Y-4539-X', 'Alema', '2021-05-06', '98614679Ñ'); 
+INSERT INTO Treball VALUES ('Z-3410-C', 'Plastica', '2021-05-07', '78190971F'); 
+INSERT INTO Treball VALUES ('M-2349-Ñ', 'Tecnologia', '2021-05-08', '97130139W');
+
+INSERT INTO Professors VALUES ('91047295O', 'Jaume Miralles', 'Carrer la col 78', 'Informatica');
+INSERT INTO Professors VALUES ('95728390Y', 'Pablo Torre', 'Carrer el llom 21', 'Ensenyament');
+INSERT INTO Professors VALUES ('16782890L', 'Pedri Gonzalez', 'Carrer takashi 56', 'Mecanica');
+INSERT INTO Professors VALUES ('47861834Q', 'Jude Bellingham', 'Carrer miura 54', 'Mecatronica');
+INSERT INTO Professors VALUES ('98614679Ñ', 'Florian Wirtz', 'Carrer tomiyasu 65', 'Cultura');
+INSERT INTO Professors VALUES ('78190971F', 'Ibrahima Konate', 'Carrer lobotka 9', 'Idiomes');
+INSERT INTO Professors VALUES ('97130139W', 'Dusan Vlahovic', 'Carrer bimbo 23', 'Esports');
+
+INSERT INTO Tribunal VALUES ('OP-7865-KU', 'Barcelona', 95);
+INSERT INTO Tribunal VALUES ('HJ-2138-MY', 'Zaragoza', 97);
+INSERT INTO Tribunal VALUES ('IU-7756-NB', 'Rioja', 96);
+INSERT INTO Tribunal VALUES ('YU-2341-MR', 'Deltebre', 92);
+INSERT INTO Tribunal VALUES ('PD-2394-LÑ', 'Sevilla', 99);
+INSERT INTO Tribunal VALUES ('DG-1349-BZ', 'Tenerife', 104);
+INSERT INTO Tribunal VALUES ('KR-3242-MA', 'Cadiz', 110);
+
+INSERT INTO RelacioProfessorsTribunals VALUES ('91047295O', 'OP-7865-KU');
+INSERT INTO RelacioProfessorsTribunals VALUES ('95728390Y', 'HJ-2138-MY');
+INSERT INTO RelacioProfessorsTribunals VALUES ('16782890L', 'IU-7756-NB');
+INSERT INTO RelacioProfessorsTribunals VALUES ('47861834Q', 'YU-2341-MR');
+INSERT INTO RelacioProfessorsTribunals VALUES ('98614679Ñ', 'PD-2394-LÑ');
+INSERT INTO RelacioProfessorsTribunals VALUES ('78190971F', 'DG-1349-BZ');
+INSERT INTO RelacioProfessorsTribunals VALUES ('97130139W', 'KR-3242-MA');
