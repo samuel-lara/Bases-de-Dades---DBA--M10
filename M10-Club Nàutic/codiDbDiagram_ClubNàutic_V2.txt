@@ -1,0 +1,66 @@
+Table Socis{
+  id int [pk]
+  nom varchar(150) [not null]
+  direccio varchar(200) [not null]
+  telefon varchar(20) [not null]
+  data_alta date [not null]
+}
+
+Table TipusEmbarcacions{
+  id int [pk]
+  nom varchar(10)
+  propulsio varchar(10)
+}
+  
+Table Embarcacions{
+  matricula varchar(20) [pk]
+  nom varchar(50) [not null]
+  tipus int [not null, ref: > TipusEmbarcacions.id]
+  manega int [not null]
+  eslora int [not null]
+  propietari int [not null, ref: > Socis.id]
+  amarre int [not null, ref:- Amarres.id]
+}
+
+Enum siNo{
+  SI
+  NO
+}
+
+Table Amarres{
+  id int [pk]
+  dataAssignacio date [null]
+  manteniment siNo [not null]
+}
+
+Enum tipusComptadors{
+  AIGUA
+  LLUM
+}
+
+Table Comptadors{
+  id int [pk]
+  tipus tipusComptadors [not null]
+  dataInici date [not null]
+  dataFinal date [not null]
+  lectura double [not null]
+  cost int [not null]
+  amarre int [ref:> Amarres.id]
+}
+
+Table EspecialitatsTreballadors{
+  id int [pk]
+  nom varchar(150) [not null]
+}
+
+Table Treballadors{
+  id int [pk]
+  nom varchar(150) [not null]
+  especialitat int [not null, ref:> EspecialitatsTreballadors.id]
+}
+
+Table AmarresTreballadors{
+  id int [pk]
+  amarre int [not null, ref:> Amarres.id]
+  treballador int [not null, ref:> Treballadors.id]
+}

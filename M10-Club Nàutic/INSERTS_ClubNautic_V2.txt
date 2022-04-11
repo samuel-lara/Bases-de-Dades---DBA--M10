@@ -1,0 +1,136 @@
+
+#Socis
+
+INSERT INTO Socis VALUES ('200', 'IlloJuan', 'Carrer musclo 77', '767890432', '2022-10-06');
+INSERT INTO Socis VALUES ('201', 'Willyrex', 'Carrer tonyina 65', '617890265', '2022-09-22');
+INSERT INTO Socis VALUES ('202', 'Staxx', 'Carrer Madagascar 80', '910378890', '2022-01-06');
+INSERT INTO Socis VALUES ('203', 'ElXokas', 'Carrer moris 22', '671892000', '2022-12-25');
+INSERT INTO Socis VALUES ('204', 'Auron', 'Carrer el mico 11', '190664322', '2022-02-06');
+INSERT INTO Socis VALUES ('205', 'Ibai', 'Carrer paquito 45', '900654378', '2022-05-31');
+INSERT INTO Socis VALUES ('206', 'Reven', 'Carrer peluquero 39', '900172511', '2022-10-11');
+INSERT INTO Socis VALUES ('207', 'TheGrefg', 'Carrer gamba 44', '091227854', '2022-11-09');
+INSERT INTO Socis VALUES ('208', 'Agustin', 'Carrer bogabant 71', '165442678', '2022-08-23');
+INSERT INTO Socis VALUES ('209', 'Arthur', 'Carrer xapadillo de tenca 32', '198625788', '2022-07-30');
+INSERT INTO Socis VALUES ('210', 'DjMariio', 'Carrer de les tendretes 8', '109983611', '2022-12-04');
+
+
+
+#TipusEmbarcacions
+
+INSERT INTO TipusEmbarcacions VALUES (1,'Blandro', '3 veles');
+INSERT INTO TipusEmbarcacions VALUES (2,'Buque', 'Vapor');
+INSERT INTO TipusEmbarcacions VALUES (3,'Barco', 'Vapor');
+INSERT INTO TipusEmbarcacions VALUES (4,'Lancha', 'Rem');
+INSERT INTO TipusEmbarcacions VALUES (5,'Kayak', 'Rem');
+INSERT INTO TipusEmbarcacions VALUES (6,'Piragua', 'Rem');
+INSERT INTO TipusEmbarcacions VALUES (7,'Coca', '1 vela');
+INSERT INTO TipusEmbarcacions VALUES (8,'Carraca', 'Varies veles');
+INSERT INTO TipusEmbarcacions VALUES (9,'Carabela', '1 vela');
+INSERT INTO TipusEmbarcacions VALUES (10,'Galera', 'Rem i vela');
+INSERT INTO TipusEmbarcacions VALUES (11,'Galió', 'Varies veles');
+
+
+
+
+#EspecialitatsTreballadors
+
+INSERT INTO EspecialitatsTreballadors VALUES (88, 'Frega sols');
+INSERT INTO EspecialitatsTreballadors VALUES (70, 'Amarardor');
+INSERT INTO EspecialitatsTreballadors VALUES (10, 'Admirall');
+INSERT INTO EspecialitatsTreballadors VALUES (11, 'Marine');
+INSERT INTO EspecialitatsTreballadors VALUES (60, 'Nusador');
+INSERT INTO EspecialitatsTreballadors VALUES (54, 'Clauer');
+INSERT INTO EspecialitatsTreballadors VALUES (08, 'Guardia Nocturn');
+
+
+
+#Treballadors
+
+INSERT INTO Treballadors VALUES (971, 'Jordi Sorribes', 88);
+INSERT INTO Treballadors VALUES (972, 'Anas Casanova', 70);
+INSERT INTO Treballadors VALUES (973, 'Maria Limbos', 54);
+INSERT INTO Treballadors VALUES (974, 'Kuzan', 10);
+INSERT INTO Treballadors VALUES (975, 'Borsalino', 10);
+INSERT INTO Treballadors VALUES (976, 'Fredy benson', 08);
+INSERT INTO Treballadors VALUES (977, 'Josep Miro', 11);
+INSERT INTO Treballadors VALUES (978, 'Iker Casillas', 60);
+INSERT INTO Treballadors VALUES (979, 'Samus Zero', 60);
+INSERT INTO Treballadors VALUES (980, 'Alba Majo', 54);
+
+
+
+#Amarres
+
+INSERT INTO Amarres VALUES (01, ‘2018-01-12’, ‘si’);
+INSERT INTO Amarres VALUES (02, ‘2018-02-22’, ‘no’);
+INSERT INTO Amarres VALUES (03, ‘2018-03-07’, ‘no’);
+INSERT INTO Amarres VALUES (04, ‘2018-06-24’, ‘si’);
+INSERT INTO Amarres VALUES (05, ‘2018-07-09’, ‘si’);
+INSERT INTO Amarres VALUES (06, ‘2019-10-17’, ‘si’); #amarre amb servei contractat i més d’un treballador assignat
+INSERT INTO Amarres VALUES (07, ‘2019-12-12’, ‘no’);
+INSERT INTO Amarres VALUES (08, ‘2020-01-19’, ‘si’); #amarre amb servei contractat i més d’un treballador assignat
+INSERT INTO Amarres VALUES (09, ‘2020-04-21’, ‘si’); #amarre amb servei contractat i més d’un treballador assignat
+INSERT INTO Amarres VALUES (10, ‘’, ‘no’); #Amarre no assignat
+INSERT INTO Amarres VALUES (11, ‘’, ‘no’); #Amarre no assignat
+INSERT INTO Amarres VALUES (12, ‘’, ‘no’); #Amarre no assignat
+
+#AmarresTreballadors 
+
+INSERT INTO AmarresTreballadors VALUES (4900, 01, 971);
+INSERT INTO AmarresTreballadors VALUES (4903, 02, 972);
+INSERT INTO AmarresTreballadors VALUES (4905, 03, 973);
+INSERT INTO AmarresTreballadors VALUES (4907, 04, 974);
+INSERT INTO AmarresTreballadors VALUES (4909, 05, 975);
+INSERT INTO AmarresTreballadors VALUES (4990, 06, 976);
+INSERT INTO AmarresTreballadors VALUES (4945, 07, 977);
+INSERT INTO AmarresTreballadors VALUES (4949, 08, 978);
+INSERT INTO AmarresTreballadors VALUES (4959, 09, 979);
+INSERT INTO AmarresTreballadors VALUES (4932, 03, 980);
+INSERT INTO AmarresTreballadors VALUES (4935, 06, 976);
+INSERT INTO AmarresTreballadors VALUES (4940, 07, 977);
+INSERT INTO AmarresTreballadors VALUES (4942, 08, 971);
+INSERT INTO AmarresTreballadors VALUES (4947, 09, 974);
+INSERT INTO AmarresTreballadors VALUES (4956, 03, 980);
+
+
+
+#Embarcacions
+
+INSERT INTO Embarcacions VALUES ('12419LK', 'Going Merry', 9, 10, 17, 200, 01 );
+INSERT INTO Embarcacions VALUES ('767656Y', 'Perla Negra', 7, 18, 29, 201, 02 );
+INSERT INTO Embarcacions VALUES ('685657P', 'Thousand Sunny', 11, 40, 69, 202, 03 );
+INSERT INTO Embarcacions VALUES ('546509C', 'Santa Mara Juana', 7, 23, 34, 203, 04 );
+INSERT INTO Embarcacions VALUES ('456678I', 'Oriol Romanus', 2, 13, 18, 204, 05 );
+INSERT INTO Embarcacions VALUES ('852343K', 'Fortinait o Lababji', 8, 23, 34, 205, 06 );
+INSERT INTO Embarcacions VALUES ('0979398I', 'Nave de Babidí', 8, 9, 12, 206, 07);
+INSERT INTO Embarcacions VALUES ('876554U', 'La Despellejadora', 10, 63, 84, 207, 08 );
+INSERT INTO Embarcacions VALUES ('545328B', 'Sergio Parte 2', 1, 2, 7, 208, 09 );
+INSERT INTO Embarcacions VALUES ('857463T', 'Pablo', 6, 1, 12, 209, 10 );
+#2 embarcacions d’un soci
+INSERT INTO Embarcacions VALUES ('857463T', 'No a la guerra', 3, 7, 19, 210, 11 );
+INSERT INTO Embarcacions VALUES ('765782Y', 'Travis Scott', 5, 12, 29, 210, 12 );
+
+
+
+#Comptadors
+
+INSERT INTO Comptadors VALUES (67909, 'AIGUA', '2030-08-01', '2030-09-01', 210.7, 400.00, '01'); #mes1aiguaIDAmarre01
+INSERT INTO Comptadors VALUES (69313, 'AIGUA', '2030-08-01', '2030-09-01', 199.3, 398.45, '02'); #mes1aiguaIDAmarre02
+INSERT INTO Comptadors VALUES (69311, 'LLUM', '2030-08-01', '2030-09-01', 230.4, 442.30, '03'); #mes1llumIDAmarre03
+INSERT INTO Comptadors VALUES (61231, 'AIGUA', '2030-08-01', '2030-09-01', 243.7, 430.00, '04'); 
+INSERT INTO Comptadors VALUES (61230, 'LLUM', '2030-08-01', '2030-09-01', 210.3, 413.00, '05'); #mes1llumIDAmarre05
+INSERT INTO Comptadors VALUES (62310, 'AIGUA', '2030-08-01', '2030-09-01', 212.9, 422.00, '06'); #mes1aiguaIDAmarre06
+INSERT INTO Comptadors VALUES (69012, 'LLUM', '2030-08-01', '2030-09-01', 217.1, 428.00, '07');
+INSERT INTO Comptadors VALUES (69310, 'LLUM', '2030-08-01', '2030-09-01', 211.3, 489.00, '08'); #mes1llumIDAmarre08
+INSERT INTO Comptadors VALUES (61320, 'AIGUA', '2030-09-01', '2030-10-01', 211.3, 433.00, '01'); #mes2aiguaIDAmarre01
+INSERT INTO Comptadors VALUES (62330, 'AIGUA', '2030-09-01', '2030-10-01', 240.9, 445.00, '02'); #mes2aiguaIDAmarre02
+INSERT INTO Comptadors VALUES (69340, 'AIGUA', '2030-09-01', '2030-10-01', 255.2, 432.00, '06'); #mes2aiguaIDAmarre06
+INSERT INTO Comptadors VALUES (69350, 'LLUM', '2030-09-01', '2030-10-01', 274.7, 446.00, '03'); #mes2llumIDAmarre03
+INSERT INTO Comptadors VALUES (69360, 'LLUM', '2030-09-01', '2030-10-01', 232.3, 451.00, '05'); #mes2llumIDAmarre05
+INSERT INTO Comptadors VALUES (69370, 'LLUM', '2030-09-01', '2030-10-01', 211.9, 420.00, '08'); #mes2llumIDAmarre08
+INSERT INTO Comptadors VALUES (69380, 'LLUM', '2030-08-01', '2030-09-01', 225.9, 651.00, '01'); #mes1LlumIDAmarre01
+INSERT INTO Comptadors VALUES (69390, 'LLUM', '2030-09-01', '2030-10-01', 243.8, 124.00, '01'); #mes2LlumIDAmarre01
+INSERT INTO Comptadors VALUES (69400, 'LLUM', '2030-08-01', '2030-09-01', 321.8, 236.00, '02'); #mes1LlumIDAmarre02
+INSERT INTO Comptadors VALUES (69410, 'LLUM', '2030-09-01', '2030-10-01', 211.3, 362.00, '02'); #mes2LlumIDAmarre02
+INSERT INTO Comptadors VALUES (69420, 'AIGUA', '2030-08-01', '2030-09-01', 213.7, 422.00, '08'); #mes1AiguaIDAmarre08
+INSERT INTO Comptadors VALUES (69430, 'AIGUA', '2030-09-01', '2030-10-01', 264.2, 352.00, '08'); #mes2AiguaIDAmarre08
